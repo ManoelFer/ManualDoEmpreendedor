@@ -71,7 +71,7 @@ public class Tela_de_cadastro extends AppCompatActivity {
                         Toast.makeText(Tela_de_cadastro.this,"Erro ao registrar usuário! Campos de senha não conferem!",
                                 Toast.LENGTH_LONG).show();
                         Toast.makeText(Tela_de_cadastro.this,"Por favor, certifique que os campos de senha estejam idênticos" +
-                                        "e tente novamentee!",
+                                        "e tente novamente!",
                                 Toast.LENGTH_LONG).show();
                     }
                 }
