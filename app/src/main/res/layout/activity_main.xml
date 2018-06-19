@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Logar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_de_tela_homem_de_negocios"
+    tools:context="com.example.manoel.manualdoempreendedor.Activity.MainActivity">
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/LoginButtonFacebook"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/LoginButtonGoogle"
+        android:layout_alignLeft="@+id/LoginButtonGoogle"
+        android:layout_alignStart="@+id/LoginButtonGoogle" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/LoginButtonGoogle"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_alignEnd="@+id/edt_senha"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/edt_senha" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/edt_senha"
+        android:layout_alignStart="@+id/edt_senha"
+        android:layout_below="@+id/imageView9"
+        android:layout_marginTop="56dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="E-MAIL"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_senha"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_action_pass"
+        android:ems="10"
+        android:fontFamily="serif-monospace"
+        android:hint="SENHA"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/background_dark"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edt_senha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/btn_entrar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="ENTRAR"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        app:srcCompat="@drawable/logo_manual_do_empeendedor" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginButtonFacebook"
+        android:layout_centerHorizontal="true"
+        android:text="-------------------------OU-------------------------"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/cardView"
+        android:layout_alignStart="@+id/cardView"
+        android:layout_below="@+id/cardView"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_lembrarsenha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:text="ESQUECI MINHA SENHA"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="serif"
+                android:text="REGISTRE AQUI!"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

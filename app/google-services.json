@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "382346450819",
+    "firebase_url": "https://manual-do-empreendedor.firebaseio.com",
+    "project_id": "manual-do-empreendedor",
+    "storage_bucket": "manual-do-empreendedor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382346450819:android:2427f9cd01fa1845",
+        "android_client_info": {
+          "package_name": "com.example.manoel.manualdoempreendedor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382346450819-thh5qmnuo7jkl232okvc0goe71j2qndc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manoel.manualdoempreendedor",
+            "certificate_hash": "d89efe30527a77d27672758c583f7fb0d33a6748"
+          }
+        },
+        {
+          "client_id": "382346450819-5s6398ri3m338unv2n4dmalkqb95fpt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByMEowCHFLL_0NVbW9rPFzZyJHI0s8fOk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382346450819-5s6398ri3m338unv2n4dmalkqb95fpt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
