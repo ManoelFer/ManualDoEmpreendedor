@@ -38,7 +38,7 @@
         tools:layout_editor_absoluteY="167dp" />
 
     <EditText
-
+        android:longClickable="false"
         android:id="@+id/confirma_cad_email"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
