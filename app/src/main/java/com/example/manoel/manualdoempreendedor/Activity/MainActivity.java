@@ -97,10 +97,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        /*FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
         if (user != null) {
             SendUserToTela_inicial_para_redes_sociais();
-        }
+        }*/
 
         firebaseAuth = FirebaseAuth.getInstance();
         loadingBar = new ProgressDialog(this);
@@ -246,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
                             // Cadastro realizado com sucesso!
                             Log.d(null, "signInWithCredential:success");
                             FirebaseUser user = firebaseAuth.getCurrentUser();
-
+                            SendUserToTela_inicial_para_redes_sociais();
 
                         } else {
                             // Falha no cadastro
@@ -270,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void SendUserToTela_inicial_para_redes_sociais() {
 
-        Intent intent = new Intent(MainActivity.this, Tela_inicial_para_redes_sociais.class);
+        Intent intent = new Intent(MainActivity.this, Tela_inicial_redes_sociais.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
@@ -284,7 +285,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void SendUserToTela_inicial_para_cadastrados(){
-        Intent intent = new Intent(MainActivity.this, Tela_inicial_para_cadastrados.class);
+        Intent intent = new Intent(MainActivity.this, TelaInicialCadastrados.class);
         startActivity(intent);
         finish();
     }

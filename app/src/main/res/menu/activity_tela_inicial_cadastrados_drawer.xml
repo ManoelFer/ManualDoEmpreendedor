@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="5W2H">
+            <menu>
+
+                <item
+                    android:id="@+id/what"
+                    android:icon="@drawable/o_que"
+                    android:title="What?(O que?)"
+                    />
+
+                <item
+                    android:id="@+id/why"
+                    android:icon="@drawable/porque"
+                    android:title="Why?(Por quê?)"
+                    />
+
+                <item
+                    android:id="@+id/who"
+                    android:icon="@drawable/quem"
+                    android:title="Who?(Quem?)"
+                    />
+
+                <item
+                    android:id="@+id/when"
+                    android:icon="@drawable/quando"
+                    android:title="When?(Quando?)"
+                    />
+
+                <item
+                    android:id="@+id/where"
+                    android:icon="@drawable/onde"
+                    android:title="Where?(Onde?)"
+                    />
+
+                <item
+                    android:id="@+id/how"
+                    android:icon="@drawable/como"
+                    android:title="How?(Como?)"
+                    />
+
+                <item
+                    android:id="@+id/how_much"
+                    android:icon="@drawable/quanto_custa"
+                    android:title="How much?(Quanto custa?)"
+                    />
+
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="GERENCIADOR FINANCEIRO">
+        <menu>
+            <item
+                android:id="@+id/nav_gerenciadorFinanceiro"
+                android:icon="@drawable/icon_gerenciador_financeiro"
+                android:title="Gerenciador Financeiro" />
+        </menu>
+    </item>
+
+    <item android:title="AJUDA E FERRAMENTAS">
+        <menu>
+            <item
+                android:id="@+id/buttonLogout"
+                android:icon="@drawable/logout"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

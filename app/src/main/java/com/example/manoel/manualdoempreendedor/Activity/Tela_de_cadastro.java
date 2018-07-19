@@ -90,7 +90,7 @@ public class Tela_de_cadastro extends AppCompatActivity {
     private void cadastrarUsuario(){
 
             autenticacao = ConfiguracaoFirebase.getFirebaseAutenticacao();
-            autenticacao.createUserWithEmailAndPassword(
+            autenticacao.getInstance().createUserWithEmailAndPassword(
                     usuarios.getEmail(),
                     usuarios.getSenha()
             ).addOnCompleteListener(Tela_de_cadastro.this, new OnCompleteListener<AuthResult>() {
@@ -144,7 +144,7 @@ public class Tela_de_cadastro extends AppCompatActivity {
     }
 
     public void abrirLoginUsuario(){
-        Intent intent = new Intent(Tela_de_cadastro.this, Tela_inicial_para_cadastrados.class);
+        Intent intent = new Intent(Tela_de_cadastro.this, TelaInicialCadastrados.class);
         startActivity(intent);
         finish();
     }

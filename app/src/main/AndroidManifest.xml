@@ -41,12 +41,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.Tela_inicial_para_redes_sociais"
+            android:name=".Activity.TelaInicialCadastrados"
+            android:label="@string/title_activity_tela_inicial_cadastrados"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Activity.Tela_de_cadastro"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".Activity.Tela_inicial_para_cadastrados"></activity>
+        <activity
+            android:name=".Activity.Tela_inicial_redes_sociais"
+            android:label="@string/title_activity_tela_inicial_redes_sociais"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>

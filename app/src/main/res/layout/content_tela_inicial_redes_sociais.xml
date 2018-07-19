@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.manoel.manualdoempreendedor.Activity.Tela_inicial_para_cadastrados">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.manoel.manualdoempreendedor.Activity.Tela_inicial_redes_sociais"
+    tools:showIn="@layout/app_bar_tela_inicial_redes_sociais">
 
 </android.support.constraint.ConstraintLayout>
