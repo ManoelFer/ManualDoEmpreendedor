@@ -16,4 +16,6 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="title_activity_what_fragmento">what_fragmento</string>
     <string name="title_activity_what">What</string>
+    <string name="title_activity_gerenciador_financeiro">GerenciadorFinanceiro</string>
+    <string name="title_activity_tela_de_teste">TelaDeTeste</string>
 </resources>

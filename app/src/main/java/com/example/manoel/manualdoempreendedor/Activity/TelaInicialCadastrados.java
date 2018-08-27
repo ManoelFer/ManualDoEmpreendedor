@@ -1,5 +1,6 @@
 package com.example.manoel.manualdoempreendedor.Activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -36,6 +37,8 @@ public class TelaInicialCadastrados extends AppCompatActivity
 
     private EditText campo_o_que;
     private Button salvar_o_que;
+
+    public static Context c;
 
 
     @Override
@@ -77,6 +80,10 @@ public class TelaInicialCadastrados extends AppCompatActivity
                     new Fragmento_what()).commit();
             navigationView.setCheckedItem(R.id.what);
         }
+
+       c= this.getApplicationContext();
+
+
     }
 
     @Override

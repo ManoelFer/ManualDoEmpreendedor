@@ -13,7 +13,7 @@
         android:textSize="30sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextWhen"
         android:layout_width="317dp"
         android:layout_height="216dp"
         android:layout_alignParentBottom="true"
@@ -23,7 +23,7 @@
         android:inputType="textMultiLine" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSalvarWhen"
         android:layout_width="100dp"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
@@ -36,8 +36,8 @@
         android:id="@+id/button3"
         android:layout_width="100dp"
         android:layout_height="70dp"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_alignTop="@+id/button2"
+        android:layout_alignStart="@+id/editTextWhen"
+        android:layout_alignTop="@+id/btnSalvarWhen"
         android:text="Limpar campo" />
 
 </RelativeLayout>

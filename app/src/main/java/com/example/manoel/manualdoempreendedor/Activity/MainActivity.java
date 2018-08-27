@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.manoel.manualdoempreendedor.DAO.ConfiguracaoFirebase;
 import com.example.manoel.manualdoempreendedor.Entidades.Usuarios;
 import com.example.manoel.manualdoempreendedor.R;
+import com.example.manoel.manualdoempreendedor.TelaDeTeste;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -93,7 +94,8 @@ public class MainActivity extends AppCompatActivity {
         btn_Registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SendUserToTela_de_cadastro();
+                //SendUserToTela_de_cadastro();
+                SendTelaDeTeste();
             }
         });
 
@@ -280,6 +282,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void SendUserToTela_de_cadastro(){
         Intent intent = new Intent(MainActivity.this, Tela_de_cadastro.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void SendTelaDeTeste(){
+        Intent intent = new Intent(MainActivity.this, TelaDeTeste.class);
         startActivity(intent);
         finish();
     }
