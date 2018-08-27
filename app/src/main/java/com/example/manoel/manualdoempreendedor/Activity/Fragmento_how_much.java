@@ -152,6 +152,7 @@ public class Fragmento_how_much extends Fragment {
 
                     valor.setText("" + valorx);
                     tabela.addView(valor, lp);
+                    
 
 
                     i++;
