@@ -128,36 +128,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="29dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
                 android:text="CAPITAL INICIAL NECESSÁRIO:"
                 android:textSize="12dp"
                 fab:layout_constraintBottom_toBottomOf="parent"
                 fab:layout_constraintStart_toStartOf="parent"
-                fab:layout_constraintTop_toBottomOf="@+id/tabelaDados"
-                fab:layout_constraintVertical_bias="0.0"
+                fab:layout_constraintTop_toBottomOf="@+id/gridLayout"
+                fab:layout_constraintVertical_bias="0.912"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textViewValorTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:layout_marginBottom="16dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="24dp"
                 android:text="00,00 R$"
                 android:textSize="12dp"
                 fab:layout_constraintBottom_toBottomOf="parent"
-                fab:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
-                fab:layout_constraintHorizontal_bias="1.0"
+                fab:layout_constraintEnd_toStartOf="@+id/btnFlutuante"
                 fab:layout_constraintStart_toEndOf="@+id/textView12"
-                fab:layout_constraintTop_toBottomOf="@+id/tabelaDados"
-                fab:layout_constraintVertical_bias="0.0"
-                tools:ignore="MissingConstraints" />
+                fab:layout_constraintTop_toBottomOf="@+id/gridLayout"
+                fab:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints,UnknownId" />
 
             <Button
                 android:id="@+id/buttonSalvarHowMuch"
@@ -189,20 +185,20 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="20dp"
                 android:text="SEGUE ABAIXO A TABELA DOS ITENS SALVOS"
                 fab:layout_constraintStart_toStartOf="parent"
                 fab:layout_constraintTop_toBottomOf="@+id/buttonSalvarHowMuch"
                 tools:ignore="MissingConstraints" />
 
+
             <GridLayout
-                android:id="@+id/tabelaDados"
-                android:layout_width="359dp"
+                android:id="@+id/gridLayout"
+                android:layout_width="347dp"
                 android:layout_height="200dp"
                 android:layout_marginBottom="9dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
                 fab:layout_constraintBottom_toBottomOf="parent"
@@ -212,56 +208,81 @@
                 fab:layout_constraintTop_toBottomOf="@+id/textView15"
                 fab:layout_constraintVertical_bias="0.152">
 
-                <TextView
-                    android:id="@+id/textView24"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="0"
-                    android:layout_row="0"
-                    android:text="ITEM" />
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
 
-                <TextView
-                    android:id="@+id/textView23"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1"
-                    android:layout_row="0"
-                    android:text="VALOR" />
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listDados"
+                        android:fillViewport="true">
 
-                <TextView
-                    android:id="@+id/textView22"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="2"
-                    android:layout_row="0"
-                    android:text="QUANTIDADE" />
+                        <GridLayout
+                            android:id="@+id/tabelaDados"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
 
-                <TextView
-                    android:id="@+id/textView21"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="3"
-                    android:layout_row="0"
-                    android:text="TOTAL"
-                    tools:layout_columnWeight="4" />
+                            <TextView
+                                android:id="@+id/textView24"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="0"
+                                android:layout_row="0"
+                                android:text="ITEM"
+                                tools:background="@android:color/darker_gray" />
 
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="1"
+                                android:layout_row="0"
+                                android:background="@android:color/darker_gray"
+                                android:text="VALOR" />
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="2"
+                                android:layout_row="0"
+                                android:background="@android:color/darker_gray"
+                                android:text="QUANTIDADE" />
+
+                            <TextView
+                                android:id="@+id/textView21"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_column="3"
+                                android:layout_row="0"
+                                android:background="@android:color/darker_gray"
+                                android:text="TOTAL"
+                                tools:layout_columnWeight="4" />
+
+
+                        </GridLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                </HorizontalScrollView>
             </GridLayout>
 
+
             <android.support.design.widget.FloatingActionButton
-                android:id="@+id/floatingActionButton"
+                android:id="@+id/btnFlutuante"
                 android:layout_width="wrap_content"
                 android:layout_height="58dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="24dp"
                 android:clickable="true"
                 fab:backgroundTint="@android:color/background_light"
                 fab:layout_constraintBottom_toBottomOf="parent"
                 fab:layout_constraintEnd_toEndOf="parent"
-                fab:layout_constraintTop_toBottomOf="@+id/tabelaDados"
+                fab:layout_constraintTop_toBottomOf="@+id/gridLayout"
                 fab:srcCompat="@drawable/ic_action_sifrao"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints,NotSibling" />
 
         </android.support.constraint.ConstraintLayout>
 
