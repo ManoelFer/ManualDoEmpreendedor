@@ -4,25 +4,18 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.NestedScrollView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.GridLayout;
-import android.widget.GridView;
-import android.widget.HorizontalScrollView;
-import android.widget.ImageView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.manoel.manualdoempreendedor.Entidades.Formulario_ItensNecessarios;
 import com.example.manoel.manualdoempreendedor.R;
-import com.example.manoel.manualdoempreendedor.TelaDeTeste;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -73,11 +66,16 @@ public class Fragmento_how_much extends Fragment {
         quantidade = (EditText) view.findViewById(R.id.editTextQuantidade);
         valorTotal = (TextView) view.findViewById(R.id.textViewValorTotal);
         tabela = (GridLayout) view.findViewById(R.id.tabelaDados);
-        fab = (FloatingActionButton) view.findViewById(R.id.btnFlutuante);
+        //fab = (FloatingActionButton) view.findViewById(R.id.btnFlutuante);
 
 
-
-
+        /*fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //fab.setBackgroundDrawable(getResources().getDrawable(R.drawable/.selector_button));
+                Toast.makeText(getApplicationContext(), "Botão clicado!", Toast.LENGTH_LONG).show();
+            }
+        });*/
 
         btnSalvarItensEValores.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -174,7 +172,7 @@ public class Fragmento_how_much extends Fragment {
                     coluna = GridLayout.spec(1);
                     lp = new GridLayout.LayoutParams(linha, coluna);
 
-                    valor.setText("" + valorx + "R$");
+                    valor.setText("" + valorx + " R$");
                     tabela.addView(valor, lp);
 
 //----------------- COLUNA 2 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -192,7 +190,7 @@ public class Fragmento_how_much extends Fragment {
                     coluna = GridLayout.spec(3);
                     lp = new GridLayout.LayoutParams(linha, coluna);
 
-                    variavelTotal.setText("" + capital + "R$");
+                    variavelTotal.setText("" + capital + " R$");
                     tabela.addView(variavelTotal, lp);
 //---------------- FINAL DAS COLUNAS DA TABELA --------------------------------------------------------------------------------------------------------------------------------
 

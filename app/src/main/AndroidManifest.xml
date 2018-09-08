@@ -51,10 +51,6 @@
             android:name=".Activity.Tela_inicial_redes_sociais"
             android:label="@string/title_activity_tela_inicial_redes_sociais"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".TelaDeTeste"
-            android:label="@string/title_activity_tela_de_teste"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>

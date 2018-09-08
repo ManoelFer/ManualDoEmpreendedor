@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">ManualDoEmpreendedor</string>
     <string name="facebook_app_id">205936260011478</string>
     <string name="fb_login_protocol_scheme">fb205936260011478</string>
@@ -6,6 +6,7 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_tela_inicial_cadastrados"></string>

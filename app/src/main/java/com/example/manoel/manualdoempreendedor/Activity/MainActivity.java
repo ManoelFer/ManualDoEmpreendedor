@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -15,7 +14,6 @@ import android.widget.Toast;
 import com.example.manoel.manualdoempreendedor.DAO.ConfiguracaoFirebase;
 import com.example.manoel.manualdoempreendedor.Entidades.Usuarios;
 import com.example.manoel.manualdoempreendedor.R;
-import com.example.manoel.manualdoempreendedor.TelaDeTeste;
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -94,8 +92,7 @@ public class MainActivity extends AppCompatActivity {
         btn_Registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //SendUserToTela_de_cadastro();
-                SendTelaDeTeste();
+                SendUserToTela_de_cadastro();
             }
         });
 
@@ -282,12 +279,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void SendUserToTela_de_cadastro(){
         Intent intent = new Intent(MainActivity.this, Tela_de_cadastro.class);
-        startActivity(intent);
-        finish();
-    }
-
-    private void SendTelaDeTeste(){
-        Intent intent = new Intent(MainActivity.this, TelaDeTeste.class);
         startActivity(intent);
         finish();
     }
